@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "17007ff3-5d09-40d0-88fc-758f2a8b0eff",
+		"name": "stock",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Addresses",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"address\": \"Rua 001\",\n\t\"city\": \"Rua 001\",\n\t\"zip\": \"123456789\",\n\t\"state\": \"State 001\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/app/addresses/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"app",
+						"addresses",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/app/addresses/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/app/addresses/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"app",
+						"addresses",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Company",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"COMPANIA A\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/app/companies/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"app",
+						"companies",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/app/companies/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"COMPANIA A\",\n\t [{\n        \"id\": 2,\n        \"address\": \"Rua Paschoal Bruno\",\n        \"city\": \"Uberlândia\",\n        \"zip\": \"38408714\",\n        \"state\": \"MINAS GERAIS\"\n    }]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/app/companies/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"app",
+						"companies",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Produtos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"PRODUTO D\",\n\t\"purchasePrice\": 50.00,\n\t\"sellPrice\": 65.00\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/app/products/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"app",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

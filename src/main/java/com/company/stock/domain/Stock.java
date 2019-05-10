@@ -13,6 +13,7 @@ public class Stock extends AbstractDomain {
 	private Double amount;
 	private Double sell;
 	private Double purchase;
+	
 	@OneToMany
 	private List<Product> products;
 

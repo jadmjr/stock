@@ -11,12 +11,40 @@ import java.util.List;
 public class Stock extends AbstractDomain {
 
 	private Double amount;
+	private Double sell;
+	private Double purchase;
 	@OneToMany
 	private List<Product> products;
 
 	Stock() {
 	}
 	
+	
+	
+	public Double getSell() {
+		return sell;
+	}
+
+
+
+	public void setSell(Double sell) {
+		this.sell = sell;
+	}
+
+
+
+	public Double getPurchase() {
+		return purchase;
+	}
+
+
+
+	public void setPurchase(Double purchase) {
+		this.purchase = purchase;
+	}
+
+
+
 	public Double getAmount() {
 		return amount;
 	}

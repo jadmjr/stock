@@ -16,6 +16,8 @@ public class Company extends AbstractDomain {
 	private Set<Stock> stocks;
 	@OneToOne
 	private Address addresses;
+	
+	private 
 
 	Company() {
 	}

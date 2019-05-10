@@ -21,18 +21,7 @@ public class StockApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		
-		/*
-		 * Set<Stock> stocks = new HashSet<>(); Stock s1 = new Stock(14234.0, 0.0, 0.0);
-		 * stocks.add(s1);
-		 * 
-		 * Address a1 = new Address("RUA PASCHOAL BRUNO", "UBERLANDIA", "38408714",
-		 * "MINAS GERIAS");
-		 * 
-		 * Company c1 = new Company("COMPANIA A", stocks, a1);
-		 * 
-		 * Product p1 = new
-		 */
+
 	}
 
 }

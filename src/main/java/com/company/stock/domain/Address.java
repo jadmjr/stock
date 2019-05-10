@@ -9,12 +9,24 @@ import javax.persistence.Entity;
 @Entity
 public class Address extends AbstractDomain {
     private String address;
+    private Integer number;
     private String city;
     private String zip;
     private String state;
 
     Address(){}
     
+    
+	public Integer getNumber() {
+		return number;
+	}
+
+
+	public void setNumber(Integer number) {
+		this.number = number;
+	}
+
+
 	public String getAddress() {
         return address;
     }
